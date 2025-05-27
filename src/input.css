@@ -1,0 +1,350 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* Clases personalizadas */
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    /* Para el scroll suave del header */
+}
+
+/* Definiendo los colores personalizados para usar con Tailwind */
+.bg-mtg-blue {
+    background-color: #144c93;
+}
+
+.text-mtg-blue {
+    color: #144c93;
+}
+
+.hover\:bg-mtg-blue-dark:hover {
+    background-color: #0f3a75;
+}
+
+.bg-mtg-green {
+    background-color: #7bb926;
+}
+
+.text-mtg-green {
+    color: #7bb926;
+}
+
+.hover\:bg-mtg-green-dark:hover {
+    background-color: #63981d;
+}
+
+.border-mtg-green {
+    border-color: #7bb926;
+}
+
+.ring-mtg-green {
+    --tw-ring-color: #7bb926;
+}
+
+/* Estilo para el Hero Section */
+.hero-bg {
+    background-image: linear-gradient(rgba(20, 76, 147, 0.85), rgba(20, 76, 147, 0.9)), url('https://images.unsplash.com/photo-1581092921533-799461c3icol?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Animación de aparición */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para carrusel de clientes */
+.client-carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.client-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.client-logo {
+    flex-shrink: 0;
+    width: 160px;
+    /* Ajusta según el tamaño de tus logos */
+    height: 80px;
+    /* Ajusta según el tamaño de tus logos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    /* Espacio entre logos */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+}
+
+.client-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Estilos para carrusel de noticias */
+.news-carousel-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.news-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.news-card {
+    flex: 0 0 100%;
+    /* Cada tarjeta ocupa el 100% del contenedor al principio */
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    /* Espacio entre tarjetas */
+}
+
+@media (min-width: 768px) {
+
+    /* md */
+    .news-card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* lg */
+    .news-card {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+.news-card-content {
+    @apply bg-white rounded-lg shadow-xl overflow-hidden h-full flex flex-col;
+}
+
+.news-card-content img {
+    @apply w-full h-56 object-cover;
+}
+
+.news-card-text {
+    @apply p-6 flex flex-col flex-grow;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+/* Estilos especificos para quienes somos */
+.page-header-bg {
+    background-image: linear-gradient(rgba(20, 76, 147, 0.8), rgba(20, 76, 147, 0.85)), url('https://avanceorganizacional.net/wp-content/uploads/2021/03/nuestra-empresa.jpg');
+    /* Puedes cambiar esta URL por una imagen por defecto para todas las páginas interiores o ajustarla por página si es necesario */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para las tarjetas de valores (usadas en Quiénes Somos) */
+.value-card {
+    @apply bg-white p-6 rounded-lg shadow-lg text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+}
+
+.value-card i {
+    @apply text-4xl mb-4;
+}
+
+.value-card h4 {
+    @apply text-xl font-semibold mb-2;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+/* --- Estilos para los modales de quienes somos --- */
+/* Clase base para el overlay/fondo del modal */
+.modal-overlay {
+    @apply fixed inset-0 z-50 bg-transparent backdrop-blur-sm p-4 transition-opacity duration-300 ease-in-out items-center justify-center;
+}
+
+/* Clase base para el contenedor del contenido del modal */
+.modal-box {
+    @apply bg-white rounded-lg shadow-xl w-11/12 p-6 md:p-8 relative transition-transform duration-300 ease-out;
+    animation: modal-slide-up 0.3s ease-out;
+    max-height: 90vh;
+    /* Altura máxima para el contenido del modal */
+}
+
+/* Animación para el contenido del modal */
+@keyframes modal-slide-up {
+    from {
+        transform: translateY(20px) scale(0.98);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Botón de cierre general para modales */
+.modal-close-button {
+    @apply absolute top-3 right-3 text-gray-500 hover:text-red-600 text-3xl leading-none transition-colors duration-200;
+    padding: 0.25rem;
+    /* Para un área de click más grande */
+}
+
+/* Galería de Certificados en Modal */
+.certificates-gallery-grid {
+    /* Renombrada para evitar confusión con .certificate-gallery de un intento anterior */
+    @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-h-[65vh] overflow-y-auto p-1;
+    /* Ajuste de max-h y padding */
+}
+
+.certificates-gallery-item {
+    @apply border border-gray-200 rounded-lg p-3 text-center cursor-pointer hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center bg-gray-50;
+    min-height: 120px;
+    /* Altura mínima para consistencia */
+}
+
+.certificates-gallery-item img {
+    @apply h-16 object-contain mb-2 group-hover:scale-105 transition-transform;
+    /* Estilo para la imagen del logo */
+}
+
+.certificates-gallery-item p {
+    @apply text-xs text-gray-700 font-medium;
+}
+
+/* Modal Visor de Archivos (PDF/Imagen) */
+.file-viewer-box {
+    /* Contenedor para el visor */
+    @apply bg-white rounded-lg shadow-xl w-11/12 max-w-5xl p-3 md:p-4 relative;
+    /* Menos padding interno para dar más espacio al iframe */
+    max-height: 90vh;
+}
+
+.file-viewer-box iframe {
+    @apply w-full rounded;
+    /* border-0 ya está en el iframe */
+    height: calc(85vh - 40px);
+    /* Ajusta altura, restando espacio para el botón de cierre */
+}
+
+/* ------------------------------------------------------------------------------ */
+
+
+/* Estilos para Carrusel de Productos Específicos */
+.product-specific-carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.product-specific-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-specific-card {
+    flex-shrink: 0; 
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 0 8px; 
+}
+
+@media (min-width: 640px) { /* sm */
+    .product-specific-card {
+        width: 50%; 
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* lg */
+    .product-specific-card {
+        /* Para que quepan 2.5 o 3 en el contenedor del carrusel */
+        flex: 0 0 calc(100% / 2.5);
+        max-width: calc(100% / 2.5);
+    }
+}
+
+@media (min-width: 1280px) {
+
+    /* xl */
+    .product-specific-card {
+        flex: 0 0 calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+}
+
+.product-specific-card-content {
+    @apply flex flex-col h-full justify-between p-6 border border-gray-200 bg-white rounded-lg shadow-lg;
+}
+
+.product-specific-card-content img {
+    @apply w-full h-48 object-contain rounded-md mb-4 bg-gray-100 p-2;
+}
+
+.product-specific-card-text h5 {
+    /* Título del producto específico */
+    @apply text-lg font-semibold mb-2;
+}
+
+.product-specific-card-text p {
+    /* Descripción corta */
+    @apply text-gray-600 text-sm mb-3 flex-grow;
+}
+
+.product-specific-card-buttons {
+    @apply mt-auto flex flex-col sm:flex-row gap-2;
+}
+
+.btn-info,
+.btn-quote {
+    @apply w-full sm:w-auto text-sm font-medium py-2 px-4 rounded-md transition-colors duration-200 flex items-center justify-center;
+}
+
+.btn-info {
+    @apply text-white py-2 px-4 rounded-md;
+}
+
+.btn-quote {
+    @apply text-white;
+}
+
+
+/* Estilos para Proceso Productivo */
+.process-step {
+    @apply bg-white p-6 rounded-lg shadow-lg text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+.process-step-number {
+    @apply text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4;
+}
+
+.process-step h4 {
+    @apply text-lg font-semibold mb-2;
+}
+
+.process-step p {
+    @apply text-sm text-gray-600;
+}
+
+.modal-content-scrollable {
+    /* Para el contenido del modal si necesita scroll */
+    @apply max-h-[65vh] overflow-y-auto pr-2;
+    /* Padding a la derecha para la barra de scroll */
+}

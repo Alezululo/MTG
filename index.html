@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MTG S.A.S | Ingeniería y Montajes Industriales en Colombia</title>
+    <meta name="description" content="MTG es una empresa líder en soluciones de ingeniería, fabricación y montaje industrial. Expertos en estructuras metálicas, tanques, tuberías y mantenimiento para la industria.">
+    <meta name="keywords" content="montajes industriales, estructuras metálicas, metalmecánica, ingeniería, tanques, tuberías, mantenimiento industrial, Colombia">
+    <meta name="author" content="MTG S.A.S.">
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="stylesheet" href="src\output.css" />
+  
+</head>
+
+<body class="bg-white">
+  
+    <header class="bg-mtg-blue text-white shadow-lg sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">
+                <img src="public\assets\img\logos MTG\logo_mtg_sin_fondo_3d.png" alt="Logo MTG" class="h-10">
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="font-semibold text-white border-b-2 border-mtg-green pb-1">Inicio</a>
+                <a href="..\..\public\views\quienes-somos.html" class="py-2 hover:text-mtg-green transition duration-300">Quiénes Somos</a>
+                <a href="..\..\public\views\productos-servicios.html" class="py-2 hover:text-mtg-green transition duration-300">Productos y servicios</a>
+                <a href="clientes-proyectos.html" class="py-2 hover:text-mtg-green transition duration-300">Proyectos</a>
+                <a href="noticias.html" class="py-2 hover:text-mtg-green transition duration-300">Noticias</a>
+                <a href="certificados.html" class="py-2 hover:text-mtg-green transition duration-300">Certificados</a>
+            </nav>
+            <a href="contacto.html" class="hidden md:inline-block bg-mtg-green text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-mtg-green-dark transition-transform duration-300 hover:scale-105">
+                Contacto
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-mtg-blue/95 backdrop-blur-sm">
+            <nav class="flex flex-col items-center space-y-4 py-6">
+                <a href="index.html" class="text-lg font-semibold">Inicio</a>
+                <a href="..\..\public\views\quienes-somos.html" class="text-lg hover:text-mtg-green">Quiénes Somos</a>
+                <a href="..\..\public\views\productos-servicios.html" class="py-2 hover:text-mtg-green transition duration-300">Productos y servicios</a>
+                <a href="clientes-proyectos.html" class="py-2 hover:text-mtg-green transition duration-300">Proyectos</a>
+                <a href="noticias.html" class="py-2 hover:text-mtg-green transition duration-300">Noticias</a>
+                <a href="certificados.html" class="py-2 hover:text-mtg-green transition duration-300">Certificados</a>
+                <a href="contacto.html" class="mt-4 bg-mtg-green text-white font-semibold px-6 py-3 rounded-lg hover:bg-mtg-green-dark">Contactar Ahora</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-24 md:py-32 flex flex-col items-center text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 animate-on-scroll">Ingeniería y Montajes que Impulsan la Industria</h1>
+                <p class="text-lg md:text-xl max-w-3xl mb-8 animate-on-scroll" style="transition-delay: 150ms;">Construimos soluciones robustas y eficientes para los desafíos del sector industrial, con un compromiso total con la calidad y la seguridad.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-on-scroll" style="transition-delay: 300ms;">
+                    <a href="servicios.html" class="bg-mtg-green text-white font-semibold py-3 px-8 rounded-lg shadow-xl hover:bg-mtg-green-dark transition-transform duration-300 hover:scale-105 text-lg">
+                        Explorar Servicios
+                    </a>
+                    <a href="contacto.html" class="bg-white text-mtg-blue font-semibold py-3 px-8 rounded-lg shadow-xl hover:bg-gray-200 transition-transform duration-300 hover:scale-105 text-lg">
+                        Hablar con un Experto
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-10 text-center">
+                    <div class="animate-on-scroll">
+                        <div class="text-mtg-blue text-5xl mb-4"><i class="fas fa-medal"></i></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Experiencia Comprobada</h3>
+                        <p class="text-gray-600">Más de 20 años liderando proyectos complejos en el sector industrial.</p>
+                    </div>
+                    <div class="animate-on-scroll" style="transition-delay: 200ms;">
+                        <div class="text-mtg-blue text-5xl mb-4"><i class="fas fa-check-circle"></i></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Calidad Certificada</h3>
+                        <p class="text-gray-600">Procesos rigurosos que garantizan la máxima calidad y durabilidad.</p>
+                    </div>
+                    <div class="animate-on-scroll" style="transition-delay: 400ms;">
+                        <div class="text-mtg-blue text-5xl mb-4"><i class="fas fa-users-cog"></i></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Soluciones a la Medida</h3>
+                        <p class="text-gray-600">Ingeniería y fabricación adaptadas a las necesidades específicas de su proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center animate-on-scroll mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-mtg-blue mb-4">Un Portafolio de Soluciones Integrales</h2>
+                    <p class="text-gray-600 text-lg">Desde el diseño hasta la ejecución, ofrecemos una gama completa de servicios para potenciar su operación. Conozca nuestras áreas de especialización.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-xl p-8 text-left transition-transform duration-300 hover:-translate-y-2 animate-on-scroll">
+                        <div class="text-mtg-green text-4xl mb-4"><i class="fas fa-industry"></i></div>
+                        <h3 class="text-2xl font-bold text-mtg-blue mb-3">Montajes Industriales</h3>
+                        <p class="text-gray-600 mb-6">Lideramos la instalación y puesta en marcha de plantas y equipos con precisión y seguridad.</p>
+                        <a href="servicios.html" class="font-semibold text-mtg-green hover:underline">Ver más <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl p-8 text-left transition-transform duration-300 hover:-translate-y-2 animate-on-scroll" style="transition-delay: 200ms;">
+                        <div class="text-mtg-green text-4xl mb-4"><i class="fas fa-cogs"></i></div>
+                        <h3 class="text-2xl font-bold text-mtg-blue mb-3">Fabricación Metalmecánica</h3>
+                        <p class="text-gray-600 mb-6">Fabricamos estructuras, tanques y componentes a medida con los más altos estándares.</p>
+                        <a href="servicios.html" class="font-semibold text-mtg-green hover:underline">Ver más <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl p-8 text-left transition-transform duration-300 hover:-translate-y-2 animate-on-scroll" style="transition-delay: 400ms;">
+                        <div class="text-mtg-green text-4xl mb-4"><i class="fas fa-wrench"></i></div>
+                        <h3 class="text-2xl font-bold text-mtg-blue mb-3">Mantenimiento y Proyectos</h3>
+                        <p class="text-gray-600 mb-6">Aseguramos la continuidad operativa de sus activos con planes de mantenimiento expertos.</p>
+                        <a href="servicios.html" class="font-semibold text-mtg-green hover:underline">Ver más <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-100 animate-on-scroll">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-mtg-blue text-center mb-2">Nuestros Clientes Confían en Nosotros</h2>
+                <p class="text-gray-600 text-lg text-center mb-10">Nos enorgullece haber colaborado con empresas líderes en diversos sectores.</p>
+                <div class="client-carousel-container">
+                    <div id="client-carousel-track" class="client-carousel-track">
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-bancolombia.png" alt="Logo Cliente 1"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-epm.png" alt="Logo Cliente 2"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-bancolombia.png" alt="Logo Cliente 3"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-epm.png" alt="Logo Cliente 4"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-bancolombia.png" alt="Logo Cliente 5"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-epm.png" alt="Logo Cliente 6"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-bancolombia.png" alt="Logo Cliente 7"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-epm.png" alt="Logo Cliente 8"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-bancolombia.png" alt="Logo Cliente 1"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-epm.png" alt="Logo Cliente 2"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-bancolombia.png" alt="Logo Cliente 3"></div>
+                        <div class="client-logo"><img src="public\assets\img\logos clientes\logo-epm.png" alt="Logo Cliente 4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 animate-on-scroll">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-mtg-blue text-center mb-4">Últimas Noticias y Novedades</h2>
+                <p class="text-gray-600 text-lg text-center mb-12">Manténgase al día con nuestros proyectos más recientes, innovaciones y eventos de la industria.</p>
+                
+                <div class="news-carousel-container">
+                    <div id="news-carousel-track" class="news-carousel-track">
+                        <div class="news-card">
+                            <div class="news-card-content">
+                                <img src="https://placehold.co/600x400/144c93/FFFFFF?text=Noticia+1" alt="Imagen Noticia 1">
+                                <div class="news-card-text">
+                                    <h3 class="text-xl font-bold text-mtg-blue mb-2">MTG Completa Exitoso Montaje para Sector Energético</h3>
+                                    <p class="text-gray-600 text-sm mb-4 flex-grow">Detalles sobre un reciente proyecto de montaje de gran envergadura, destacando la eficiencia y seguridad implementada...</p>
+                                    <a href="noticias/noticia-1.html" class="font-semibold text-mtg-green hover:underline self-start">Leer más <i class="fas fa-arrow-right ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card">
+                            <div class="news-card-content">
+                                <img src="https://placehold.co/600x400/7bb926/FFFFFF?text=Noticia+2" alt="Imagen Noticia 2">
+                                <div class="news-card-text">
+                                    <h3 class="text-xl font-bold text-mtg-blue mb-2">Innovación en Fabricación: Nuevas Tecnologías en MTG</h3>
+                                    <p class="text-gray-600 text-sm mb-4 flex-grow">Presentamos la incorporación de nueva maquinaria y software que optimizan nuestros procesos de fabricación metalmecánica...</p>
+                                    <a href="noticias/noticia-2.html" class="font-semibold text-mtg-green hover:underline self-start">Leer más <i class="fas fa-arrow-right ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card">
+                            <div class="news-card-content">
+                                <img src="https://placehold.co/600x400/cccccc/333333?text=Noticia+3" alt="Imagen Noticia 3">
+                                <div class="news-card-text">
+                                    <h3 class="text-xl font-bold text-mtg-blue mb-2">MTG Participa en la Feria Industrial Nacional 2025</h3>
+                                    <p class="text-gray-600 text-sm mb-4 flex-grow">Resumen de nuestra participación, los productos y servicios destacados, y las conexiones establecidas durante el evento...</p>
+                                    <a href="noticias/noticia-3.html" class="font-semibold text-mtg-green hover:underline self-start">Leer más <i class="fas fa-arrow-right ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card">
+                             <div class="news-card-content">
+                                <img src="https://placehold.co/600x400/144c93/FFFFFF?text=Noticia+4" alt="Imagen Noticia 4">
+                                <div class="news-card-text">
+                                    <h3 class="text-xl font-bold text-mtg-blue mb-2">Compromiso con la Sostenibilidad: Iniciativas Verdes</h3>
+                                    <p class="text-gray-600 text-sm mb-4 flex-grow">Conozca nuestras nuevas políticas y acciones enfocadas en reducir el impacto ambiental en todas nuestras operaciones...</p>
+                                    <a href="noticias/noticia-4.html" class="font-semibold text-mtg-green hover:underline self-start">Leer más <i class="fas fa-arrow-right ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <button id="prevNews" class="bg-mtg-blue text-white p-3 rounded-full shadow-lg hover:bg-mtg-blue-dark mx-2 disabled:opacity-50"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextNews" class="bg-mtg-blue text-white p-3 rounded-full shadow-lg hover:bg-mtg-blue-dark mx-2 disabled:opacity-50"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-mtg-blue text-white animate-on-scroll">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para Iniciar su Próximo Gran Proyecto?</h2>
+                <p class="max-w-2xl mx-auto text-lg text-gray-300 mb-8">Nuestro equipo de expertos está preparado para escuchar sus necesidades y proponerle la solución más efectiva.</p>
+                <a href="contacto.html" class="bg-mtg-green text-white font-bold py-4 px-10 rounded-lg shadow-xl hover:bg-mtg-green-dark transition-transform duration-300 hover:scale-105 text-xl">
+                    Contáctenos Hoy Mismo
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-1">
+                    <a href="index.html" class="text-2xl font-bold mb-4 inline-block">
+                        <img src="public\assets\img\logos MTG\logo_mtg_sin_fondo_3d.png" alt="Logo MTG Blanco" class="h-12">
+                    </a>
+                    <p class="text-sm text-gray-400 pr-4">Soluciones de ingeniería, montaje y fabricación para la industria.</p>
+                    <div class="mt-6 flex space-x-5">
+                        <a href="#" aria-label="Facebook MTG" class="hover:text-mtg-green transition-colors"><i class="fab fa-facebook-f text-xl" style="color: #3b5998;"></i></a>
+                        <a href="#" aria-label="Instagram MTG" class="hover:text-mtg-green transition-colors"><i class="fab fa-instagram text-xl" style="color: #C13584;"></i></a>
+                        <a href="#" aria-label="LinkedIn MTG" class="hover:text-mtg-green transition-colors"><i class="fab fa-linkedin-in text-xl" style="color: #0e76a8;"></i></a>
+                        <a href="#" aria-label="X MTG" class="hover:text-mtg-green transition-colors"><i class="fa-brands fa-x-twitter" style="color: #979797;"></i></i></a>
+                        <a href="#" aria-label="YouTube MTG" class="hover:text-mtg-green transition-colors"><i class="fab fa-youtube text-xl" style="color: #c4302b;"></i></a> </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="..\..\public\views\quienes-somos.html" class="hover:text-mtg-green">Quiénes Somos</a></li>
+                        <li><a href="..\..\public\views\productos-servicios.html" class="py-2 hover:text-mtg-green transition duration-300">Productos y servicios</a></li>
+                        <li><a href="clientes-proyectos.html" class="py-2 hover:text-mtg-green transition duration-300">Proyectos</a></li>
+                        <li><a href="noticias.html" class="py-2 hover:text-mtg-green transition duration-300">Noticias</a></li>
+                        <li><a href="certificados.html" class="py-2 hover:text-mtg-green transition duration-300">Certificados</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">Servicios Clave</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Montajes Industriales</li>
+                        <li>Estructuras Metálicas</li>
+                        <li>Tanques y Tuberías</li>
+                        <li>Mantenimiento Industrial</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">Contacto Directo</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-mtg-green"></i><span>Cra. 51A, Cl. 12B Sur #15, Medellín, Antioquia.</span></li>
+                        <li class="flex items-start"><i class="fas fa-phone-alt mt-1 mr-3 text-mtg-green"></i><span>(604) 448 8357<br>(+57) 314 619 2716</span></li>
+                        <li class="flex items-start"><i class="fas fa-envelope mt-1 mr-3 text-mtg-green"></i><a href="mailto:info@mtg.com.co" class="hover:text-mtg-green">info@mtg.com.co</a></li>
+                    </ul>
+                    <div class="mt-4 rounded-lg overflow-hidden shadow-md">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5139393973795!2d-75.59168868868186!3d6.195715593766099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46826e4dfb586b%3A0x427cd200d7992813!2sMTG!5e0!3m2!1ses!2sco!4v1748269330090!5m2!1ses!2sco"
+                            width="100%"
+                            height="170"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ubicación de la empresa MTG en Medellín, Colombia"
+                            class="w-full h-[150px] sm:h-[200px] md:h-[250px]">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+                <p>&copy; <span id="currentYear"></span> MTG S.A.S. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="public\js\script.js"></script>
+
+</body>
+
+</html>
